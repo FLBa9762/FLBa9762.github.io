@@ -1,0 +1,79 @@
+/* 设置当width小于991px的样式行为 */
+@media (max-width:991px){
+    section {
+        padding: 3rem 2rem;
+    }
+
+    /* .home .slides-container .slide {
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        display: inline;
+    } */
+
+    /* .home .slides-container .slide .image{
+        display: block;
+    } */
+}
+
+.home {
+    /* position: relative; */
+    padding-top: 10rem;
+    background: url(../images/home_bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+    /* justify-content: center; */
+
+}
+.home .poetry {
+    /* height: 90vh; */
+    padding: 10rem;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    flex-shrink: 2;
+    align-items: stretch;
+    /* background-color: #bac34e; */
+}
+
+.home .poetry p {
+    text-align: center;
+    font-size: 4rem;
+    font-family: "font_4";
+    color: #ccc;
+    
+}
+
+.home .poetry p:hover {
+    padding-bottom: .2rem;
+    color: #eee;
+}
+
+.home .push{
+    flex-shrink: 0;
+    align-self: center;
+    padding: 3rem;
+    width: 100%;
+    text-align: center;
+    /* height: 40vh; */
+    /* background-color: #be62ba; */
+    /* margin-bottom: 25rem */
+
+}
+.home .push .main_btn {
+    /* background-color: rgba(120, 0, 255, .2); */
+    font-size: 6rem;
+    padding: .5rem;
+    color: #7a507a;
+    font-family: "font_4";
+}
+
+.home .push .main_btn:hover{
+    color: #be62ba;
+}
+
+

@@ -1,0 +1,107 @@
+/* 设置当width小于991px的样式行为 */
+@media (max-width:991px){
+
+
+    section {
+        padding: 3rem 2rem;
+    }
+
+    .home .slides-container .slide {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* .home .slides-container .slide {
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        display: inline;
+    } */
+
+    /* .home .slides-container .slide .image{
+        display: block;
+    } */
+}
+
+
+
+.home {
+    /* position: relative; */
+    padding-top: 14rem;
+    background: url(../images/background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    /* background-color: ; */
+    /* position: relative; */
+}
+
+.home .slides-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.home .slides-container .slide {
+    display: flex;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+
+    /* display: none; */
+}
+
+.home .slides-container .slide:nth-child(n+2) {
+    border-top: #666 .3rem dotted;
+}
+
+/* .home .slides-container .active {
+    display: flex;
+} */
+
+.home .slides-container .slide .content {
+    align-self: flex-start;
+    /* overflow-y: scroll; */
+}
+
+
+.home .slides-container .content span {
+    color: #666;
+    font-size: 2.5rem;
+    font-family: "font_2";
+}
+
+.home .slides-container .content h3 {
+    font-size: 6rem;
+    font-family: "font_3";
+    color: #222;
+    padding: .5rem 0;
+}
+
+.home .slides-container .content .intro {
+    font-size: 3rem;
+    font-family: "font_2";
+    color: #333;
+    padding: .5rem 0;
+}
+
+.home .slides-container .content .story {
+    font-size: 3rem;
+    font-family: "font_4";
+    color: #222;
+    padding: .5rem 0;
+    text-indent: 2em;
+}
+
+.home .slides-container .slide .content,.image {
+    flex: 1 1 40rem;
+}
+
+.home .slides-container .slide .image img {
+    width: 100%;
+}
+
+
+
+

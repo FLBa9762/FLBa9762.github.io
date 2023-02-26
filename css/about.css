@@ -1,0 +1,91 @@
+/* 设置当width小于991px的样式行为 */
+@media (max-width:991px){
+    .about .container_box .box{
+        display: flex;
+        flex-direction: column;
+        /* overflow: hidden; */
+    }
+
+    /* .home .slides-container .slide {
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        display: inline;
+    } */
+
+    /* .home .slides-container .slide .image{
+        display: block;
+    } */
+}
+
+.about {
+    padding-top: 10rem;
+    background: url(../images/background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-color: #bac34e; */
+}
+
+.about .container_box {
+    display: flex;
+
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.about .container_box .box{
+    margin-bottom: 2rem;
+    display: flex;
+    /* height: 80vh; */
+    justify-content: space-around;
+    background-color: rgba(100, 0, 100, .2);
+    align-items: center;
+    border-radius: 2rem;
+    padding: 2rem;
+    /* overflow: auto; */
+    /* flex-direction: row; */
+}
+
+.about .container_box .box .content {
+    flex: 1 1 20rem;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin-right: 3rem;
+    /* justify-content: space-around; */
+    
+}
+
+.about .container_box .box .content h2 {
+    line-height: 8rem;
+    font-size: 4rem;
+    font-family: "font_4";
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.about .container_box .box .content p {
+    font-size: 2.4rem;
+    font-family: "font_8";
+    font-weight: 600;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    text-indent: 2em;
+    /* flex-grow: 1; */
+    /* text-align: center; */
+}
+
+.about .container_box .box .content p::selection{
+    background-color: #b4b892;
+}
+
+.about .container_box .box .image {
+    align-self: center;
+    flex: 1 1 20rem;
+    /* display: inline; */
+}
+
+.about .container_box .box img {
+    width: 100%;
+}

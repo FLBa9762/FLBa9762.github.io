@@ -1,0 +1,112 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      overflow: hidden;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      transition: .5s;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .item {
+      width: 30vw;
+      height: 30vh;
+      background-color: rebeccapurple;
+    }
+    .quote {
+        font-size: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item" ></div>
+    <div class="quote">饭了白a</div>
+  </div>
+  <script>
+    let date = document.querySelector(".item").addEventListener("wheel", myFunction);
+    console.log(date)
+    function myFunction() {
+        let fonts = document.querySelector(".quote");
+        fonts.style.fontSize = "35px";
+    }
+  </script>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html onwheel="myFunction(event)">
+<head>
+    <style>
+        .box {
+            width: 400px;
+            height: 300px;
+            background-color: blueviolet;
+        }
+        html {
+            height: 1000vh;
+        }
+    </style>
+</head>
+<body>
+
+<h1>WheelEvent deltaY 属性</h1>
+
+<p>滚动此页面可查看 deltaY 属性的值。</p>
+<div class="box"></div>
+<p id="demo"></p>
+<p id="display"></p>
+
+<script>
+
+document.querySelector(".box").addEventListener("mouseenter", func_1);
+function func_1() {
+    this.style.backgroundColor = "#fff";
+}
+
+document.querySelector(".box").addEventListener("mouseleave", func_2);
+function func_2() {
+    this.style.backgroundColor = "#bfc";
+}
+
+let position = 0;
+function myFunction(event) {
+  var y = event.deltaY;
+  if (y<0) {
+    position += 1;
+    window.scrollTo({
+        top:0,
+        left:0,
+        behavior:"smooth"
+    });
+  }
+  else if (y>0) {
+    window.scrollTo({
+        top:0,
+        left:0,
+        behavior:"smooth"
+        });
+    position -= 1;
+  }
+  document.getElementById("demo").innerHTML = position;
+  document.getElementById("display").innerHTML = event;
+//   console.log(event);
+}
+</script>
+
+</body>
+</html>
